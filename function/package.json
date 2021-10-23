@@ -1,0 +1,17 @@
+{
+  "name": "openfaas-fastly-handler",
+  "version": "1.0.0",
+  "description": "",
+  "main": "handler.js",
+  "scripts": {
+    "precommit": "npm run compile",
+    "compile": "ncc build -m --v8-cache handler.ts -o handler",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "fastify": "^3.22.1"
+  },
+  "devDependencies": {}
+}
